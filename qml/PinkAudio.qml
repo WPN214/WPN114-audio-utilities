@@ -28,7 +28,6 @@ Item
         id: loop
         source: stream
         duration: WPN114.TimeNode.Infinite
-        exposePath: path
         pattern.duration: sec( root.duration )
 
         property int channel: 0
