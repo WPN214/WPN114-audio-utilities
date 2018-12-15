@@ -4,6 +4,8 @@ CONFIG += c++11 dll
 QT += quick
 
 QMLDIR_FILES += $$PWD/qml/qmldir
+QMLDIR_FILES += $$PWD/qml/PinkAudio.qml
+QMLDIR_FILES += $$PWD/qml/VUMeter.qml
 
 localmod: DESTDIR = $$QML_MODULE_DESTDIR/WPN114/Audio/Utilities
 else {
