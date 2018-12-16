@@ -1,9 +1,6 @@
 module WPN114.Audio.Utilities
-typeinfo plugins.qmltypes
+typeinfo utilities.qmltypes
 plugin WPN114-audio-utilities
 classname qml_plugin
-depends WPN114.Audio.Synthesis 1.0
-depends WPN114.Time 1.0
 
 VUMeter 1.0 VUMeter.qml
-PinkAudio 1.0 PinkAudio.qml

@@ -1,0 +1,54 @@
+import QtQuick.tooling 1.2
+
+Module
+{
+    Component
+    {
+        name: "Fork"
+        prototype: "StreamNode"
+        exports: ["WPN114.Audio.Utilities/Fork 1.0"]
+
+        Property { name: "target"; type: "StreamNode" }
+        Property { name "prefader"; type: "bool" }
+    }
+
+    Component
+    {
+        name: "PeakRMS"
+        prototype: "StreamNode"
+        exports: ["WPN114.Audio.Utilities/PeakRMS 1.0"]
+
+        Property { name: "source"; type: "StreamNode" }
+        Property { name: "refreshRate"; type: "qreal" }
+
+        Signal
+        {
+            name: "rms"
+            Parameter { name: "value"; type: "QVariant" }
+        }
+
+        Signal
+        {
+            name: "peak"
+            Parameter { name: "value"; type: "QVariant" }
+        }
+    }
+
+    Component
+    {
+        name: "Downmix"
+        prototype: "StreamNode"
+        exports: ["WPN114.Audio.Utilities/Downmix 1.0"]
+
+        Property { name: "channels"; type: "QVariant" }
+    }
+
+    Component
+    {
+        name: "ChannelMapper"
+        prototype: "StreamNode"
+        exports: ["WPN114.Audio.Utilities/ChannelMapper 1.0"]
+
+        Property { name: "map"; type: "QVariantList" }
+    }
+}
