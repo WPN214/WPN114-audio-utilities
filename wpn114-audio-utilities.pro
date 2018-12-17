@@ -8,6 +8,8 @@ QMLDIR_FILES += $$PWD/qml/utilities.qmltypes
 QMLDIR_FILES += $$PWD/qml/PinkAudio.qml
 QMLDIR_FILES += $$PWD/qml/VUMeter.qml
 
+OTHER_FILES = $$QMLDIR_FILES
+
 localmod: DESTDIR = $$QML_MODULE_DESTDIR/WPN114/Audio/Utilities
 else {
     DESTDIR = $$[QT_INSTALL_QML]/WPN114/Audio/Utilities
