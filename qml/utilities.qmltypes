@@ -9,7 +9,7 @@ Module
         exports: ["WPN114.Audio.Utilities/Fork 1.0"]
 
         Property { name: "target"; type: "StreamNode" }
-        Property { name "prefader"; type: "bool" }
+        Property { name: "prefader"; type: "bool" }
     }
 
     Component
