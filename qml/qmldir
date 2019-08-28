@@ -1,6 +1,5 @@
 module WPN114.Audio.Utilities
 typeinfo utilities.qmltypes
-plugin WPN114-audio-utilities
+plugin wpn114utilities
 classname qml_plugin
-
 VUMeter 1.0 VUMeter.qml
